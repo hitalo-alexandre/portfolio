@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&family=Alef:wght@700&family=Inter:wght@300;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+   
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg,#d43bffd8,#ff2525da);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+    
+    
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    background: transparent;
+    box-shadow: 0px 8px 10px rgb(0 0 0);
+    border-radius: 10px;
+    padding: 60px;
+}
+.main-perfil{
+     background: rgba(5,5,5,0.9);
+     box-shadow: 5px 5px 15px rgb(0 0 0 / 70%);
+     border-radius: 7px;
+     width: 90%;
+     color: white;
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+.main-perfil-conteiner{
+    display: flex;
+    flex-direction: row;
+}
+.main-perfil-foto{
+    border-radius: 50%;
+    width: 200px;
+    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.main-perfil-foto img{
+    
+    width: 100%;
+    height: 100%;
+}
+.main-perfil-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 70%;
+}
+.main-perfil-sobre-title{
+    font-family: 'Alef';
+    font-weight: 700;
+}
+.main-perfil-sobre-texto{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+}
+.main-perfil-sobre-habilidade{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.main-perfil-habilidades{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+.main-perfil-habilidades img{
+    width: 120px;
+    height: 120px;
+
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@media(max-width:950px){
+    .main{
+        margin-right: 90px;
+        margin-left: 90px;
+        
+    }
+    .main-perfil-conteiner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-perfil-sobre{
+       align-items: center;
+    }
+    .main-perfil-habilidades img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media(max-width:600px ){
+    
+    .main{
+        
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+        
+        
+    }
+    .main-perfil{
+        box-shadow: 0px 20px 20px rgb(0 0 0 / 70%);
+        width: 100vw;
+        height: 100vh;
+    }
+    .main-perfil-sobre{
+        max-width: 100%;
+    }
+    .main-perfil-habilidades{
+       
+        gap:20px
+    }
+    
+}
+@media( max-height:530px){
+    .main{
+        
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+        
+        
+    }
+    .main-perfil{
+        box-shadow: 0px 20px 20px rgb(0 0 0 / 70%);
+        width: 100vw;
+        
+    }
+    .main-perfil-sobre{
+        max-width: 100%;
+    }
+    .main-perfil-habilidades{
+       
+        gap:20px
+    }
+    
+}
